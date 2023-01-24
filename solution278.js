@@ -11,8 +11,8 @@
 //count up to n, pushing any odd numbers to a new array, using modulus
 //return the length of the new array
 
-let n = 15023
 
+//too slow
 function oddCount(n){
     let oddArray = []
     for (let i = 0; i < n; i++) {
@@ -22,5 +22,11 @@ function oddCount(n){
     }return oddArray.length
 }
 
+
+//optimized
+let n = 15022
+const oddCount = n => Math.floor(n/2)
+
 oddCount(n)
+
 
